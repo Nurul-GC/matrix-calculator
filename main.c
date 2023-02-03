@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include "banners.c"
-#include "calculos.c"
+#include "headers/banners.h"
+#include "headers/calculos.h"
 
 int main(void)
 {
