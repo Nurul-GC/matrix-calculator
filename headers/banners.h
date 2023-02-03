@@ -1,7 +1,7 @@
 #ifndef BANNERS
 #define BANNERS
 
-banner_intro()
+void banner_intro()
 {
     printf("#########################################################################################\n");
     printf("#########################################################################################\n");
@@ -36,7 +36,7 @@ banner_intro()
     system("cls");
 }
 
-banner_menu()
+void banner_menu()
 {
     printf("####################################\n");
     printf("##                                ##\n");
@@ -54,7 +54,7 @@ banner_menu()
     printf("####################################\n> ");
 }
 
-banner_subtracao()
+void banner_subtracao()
 {
     system("cls");
     printf("\n##################################\n");
@@ -62,7 +62,7 @@ banner_subtracao()
     printf("##################################\n");
 }
 
-banner_soma()
+void banner_soma()
 {
     system("cls");
     printf("\n##################################\n");
@@ -70,7 +70,7 @@ banner_soma()
     printf("##################################\n");
 }
 
-banner_criacaomatr()
+void banner_criacaomatr()
 {
     system("cls");
     printf("\n#################################\n");
@@ -78,7 +78,7 @@ banner_criacaomatr()
     printf("#################################\n");
 }
 
-banner_det()
+void banner_det()
 {
     system("cls");
     printf("\n###################################\n");
