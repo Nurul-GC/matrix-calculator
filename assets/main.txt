@@ -1,0 +1,140 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+    int matriz1[4][4], matriz2[4][4], det1, det2, nlinha, ncoluna, escolha, resultado;
+
+    printf("################################\n");
+    printf("#     Construindo Matrizes     #\n");
+    printf("################################\n");
+    printf("#      Escolha uma opcao       #\n");
+    printf("#     1-Soma de Matrizes       #\n");
+    printf("#           2-Ordem            #\n");
+    printf("#           3-Ordem            #\n");
+    printf("#           4-Ordem            #\n");
+    printf("################################\n> ");
+    scanf("%d", &escolha);
+
+    switch (escolha)
+    {
+    case 1:
+        printf("\n################################\n");
+        printf("#       Soma + Matrizes        #\n");
+        printf("################################\n");
+
+
+
+        break;
+    case 2:
+        printf("\n################################\n");
+        printf("#       Matriz 2 Ordem         #\n");
+        printf("################################\n");
+
+        for (int a = 0; a < 2; a++)
+        {
+            for (int b = 0; b < 2; b++)
+            {
+                printf("\nDigite o indice da matriz na:\nlinha: %d, coluna: %d => ", a+1, b+1);
+                scanf("%d", &matriz1[a][b]);
+            }
+            printf("\n********************************\n");
+        }
+        for (int i = 0; i < 2; i++)
+        {
+            for (int ii = 0; ii < 2; ii++)
+            {
+                printf("[ %d ]\t", matriz1[i][ii]);
+            }
+            printf("\n");
+        }
+
+        resultado = (matriz1[0][0]*matriz1[1][1])-(matriz1[0][1]*matriz1[1][0]);
+        printf("\nSolucao:\n(%dx%d)-(%dx%d)=%d", matriz1[0][0], matriz1[1][1], matriz1[0][1], matriz1[1][0], resultado);
+        break;
+    case 3:
+        printf("\n################################\n");
+        printf("#       Matriz 3 Ordem         #\n");
+        printf("################################\n");
+
+        for (int a = 0; a < 3; a++)
+        {
+            for (int b = 0; b < 3; b++)
+            {
+                printf("\nDigite o indice da matriz na:\nlinha: %d, coluna: %d => ", a+1, b+1);
+                scanf("%d", &matriz1[a][b]);
+            }
+            printf("\n********************************\n");
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int ii = 0; ii < 3; ii++)
+            {
+                printf("[ %d ]\t", matriz1[i][ii]);
+            }
+            printf("\n");
+        }
+
+        printf("\nDigite um valor para o indice (linha) da funcao determinante de [0-3]:\n> ");
+        scanf("%d", &det1);
+
+        printf("\nDigite um outro valor para o indice (coluna) da funcao determinante de [0-3]:\n> ");
+        scanf("%d", &det2);
+
+        printf("\n##################################\n");
+        printf("# Aplicando o teorema de Laplace #\n");
+        printf("#  Eliminando a linha e coluna   #\n");
+        printf("#   correspondente a Det[%d:%d]    #\n", det1, det2);
+        printf("##################################\n\n");
+
+        for (int i = 0; i < 3; i++)
+        {
+            if (i == det1){
+                continue;
+            }
+            else
+            {
+                for (int ii = 0; ii < 3; ii++)
+                {
+                    if (ii == det2){
+                        continue;
+                    }else
+                    {
+                        printf("[ %d ]\t", matriz1[i][ii]);
+                        int matriz1[2][2]={{matriz1[i][ii], matriz1[i][ii]}, {matriz1[i][ii], matriz1[i][ii]}};
+                    }
+                }
+            }
+            printf("\n");
+        }
+        resultado = (matriz1[0][0]*matriz1[1][1])-(matriz1[0][1]*matriz1[1][0]);
+        printf("\nSolucao:\n(%dx%d)-(%dx%d)=%d", matriz1[0][0], matriz1[1][1], matriz1[0][1], matriz1[1][0], resultado);
+        break;
+    case 4:
+        printf("\n################################\n");
+        printf("#       Matriz 4 Ordem         #\n");
+        printf("################################\n");
+
+        for (int a = 0; a < 4; a++)
+        {
+            for (int b = 0; b < 4; b++)
+            {
+                printf("\nDigite o indice da matriz na:\nlinha: %d, coluna: %d => ", a+1, b+1);
+                scanf("%d", &matriz1[a][b]);
+            }
+            printf("\n********************************\n");
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            for (int ii = 0; ii < 4; ii++)
+            {
+                printf("[ %d ]\t", matriz1[i][ii]);
+            }
+            printf("\n");
+        }
+        printf("");
+        break;
+    default:
+        printf("Lamento, ordem de matriz nao atribuida!\n\nMas caso nao tenha nocao, uma matriz de 1 ordem tem como solucao sempre o seu unico elemento.\nEx: M = [ 1 ] <=> M = 1\n");
+        break;
+    }
+}
