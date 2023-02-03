@@ -1,0 +1,70 @@
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:4:6: error: redefinition of 'banner_intro'
+    4 | void banner_intro(void)
+      |      ^~~~~~~~~~~~
+In file included from main.c:4:
+banners.h:4:6: note: previous definition of 'banner_intro' was here
+    4 | void banner_intro(void)
+      |      ^~~~~~~~~~~~
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:39:6: error: redefinition of 'banner_menu'
+   39 | void banner_menu(void)
+      |      ^~~~~~~~~~~
+In file included from main.c:4:
+banners.h:39:6: note: previous definition of 'banner_menu' was here
+   39 | void banner_menu(void)
+      |      ^~~~~~~~~~~
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:57:6: error: redefinition of 'banner_subtracao'
+   57 | void banner_subtracao(void)
+      |      ^~~~~~~~~~~~~~~~
+In file included from main.c:4:
+banners.h:57:6: note: previous definition of 'banner_subtracao' was here
+   57 | void banner_subtracao(void)
+      |      ^~~~~~~~~~~~~~~~
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:65:6: error: redefinition of 'banner_soma'
+   65 | void banner_soma(void)
+      |      ^~~~~~~~~~~
+In file included from main.c:4:
+banners.h:65:6: note: previous definition of 'banner_soma' was here
+   65 | void banner_soma(void)
+      |      ^~~~~~~~~~~
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:73:6: error: redefinition of 'banner_criacaomatr'
+   73 | void banner_criacaomatr(void)
+      |      ^~~~~~~~~~~~~~~~~~
+In file included from main.c:4:
+banners.h:73:6: note: previous definition of 'banner_criacaomatr' was here
+   73 | void banner_criacaomatr(void)
+      |      ^~~~~~~~~~~~~~~~~~
+In file included from calculos.h:3,
+                 from main.c:5:
+banners.h:81:6: error: redefinition of 'banner_det'
+   81 | void banner_det(void)
+      |      ^~~~~~~~~~
+In file included from main.c:4:
+banners.h:81:6: note: previous definition of 'banner_det' was here
+   81 | void banner_det(void)
+      |      ^~~~~~~~~~
+In file included from main.c:5:
+calculos.h: In function 'sub':
+calculos.h:142:5: error: a label can only be part of a statement and a declaration is not a statement
+  142 |     int f, d;
+      |     ^~~
+calculos.h:152:9: error: redeclaration of 'matriz' with no linkage
+  152 |     int matriz[f][d];
+      |         ^~~~~~
+calculos.h:129:9: note: previous declaration of 'matriz' was here
+  129 |     int matriz[n][c];
+      |         ^~~~~~
+main.c: In function 'main':
+main.c:69:5: warning: implicit declaration of function 'getch'; did you mean 'getc'? [-Wimplicit-function-declaration]
+   69 |     getch();
+      |     ^~~~~
+      |     getc
