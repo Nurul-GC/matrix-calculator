@@ -1,5 +1,7 @@
-#define BANNERS
-soma()
+#ifndef CALCULOS
+#define CALCULOS
+
+void soma()
 {
     int n, c;
     printf("\nS� � poss�vel a soma de matrizes\nquando elas t�m a mesma ordem,\nisto � mesmo n�mero de linhas e \ncolunas.\n\n");
@@ -108,7 +110,7 @@ Ronaldo:
     }
 }
 
-sub()
+void sub()
 {
     int n, c;
     printf("\nDefine-se a subtração de matrizes\ncomo a diferença da primeira com a\n oposta da segunda, e elas têm que \nter a mesma ordem, ou seja mesmo\nnúmero de linhas e colunas.\n");
@@ -217,7 +219,7 @@ RFS_Program:
     }
 }
 
-muliplicacao()
+void muliplicacao()
 {
     int numlinha, numcoluna;
 
@@ -274,7 +276,7 @@ muliplicacao()
     }
 }
 
-determinant()
+void determinant()
 {
     // banner_det();
     int numcol, numcoluna;
@@ -366,3 +368,4 @@ RFS:
     }
 }
 
+#endif
