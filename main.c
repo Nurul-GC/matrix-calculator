@@ -1,12 +1,16 @@
+// compiler imports
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <conio.h>
+
+// local imports
 #include "headers/banners.h"
 #include "headers/calculos.h"
 
 int main(void)
 {
-    setlocale(0, "Portuguese_Portugal");
+    setlocale(LC_ALL, "");
 
 RFS_Program:
     banner_intro();
