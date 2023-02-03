@@ -1,7 +1,7 @@
 # Matrix-Calculator
 
 ```txt
-A simple program wrote in `C` to calculate and resolve matrix from 2nd to 4th order.
+A simple program wrote in `C` to calculate and solve matrix from 2nd to 4th order.
 ```
 
 ---
