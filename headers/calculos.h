@@ -138,7 +138,7 @@ void sub()
     }
 
 RFS_Program:
-    const int f, d;
+    int f, d;
     banner_subtracao();
     printf("\nSegunda Matriz:\n");
     printf("Digite o número de colunas\n> ");
