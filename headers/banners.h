@@ -1,3 +1,6 @@
+#ifndef BANNERS
+#define BANNERS
+
 banner_intro()
 {
     printf("#########################################################################################\n");
@@ -82,3 +85,5 @@ banner_det()
     printf("##      Determinante de Matriz   ##\n");
     printf("###################################\n");
 }
+
+#endif
